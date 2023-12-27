@@ -319,6 +319,10 @@ webhook:
   # -- The number of webhook pods to run.
   replicas: 1
 
+  # -- Create webhook RBAC
+  rbac:
+    enabled: true
+
   # Pod disruption budget
   pdb:
     # -- Deploy a PodDisruptionBudget for the admission webhook
